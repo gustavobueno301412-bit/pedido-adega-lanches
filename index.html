@@ -69,7 +69,7 @@
     <p id="modal-desc"></p>
     <h3>🟢🟢🟢🟢🟢 ➕ Adicionais 😋👍</h3>
     <div id="lista-adicionais"></div>
-    <h3>🔴🔴🔴🔴🔴 ➖ Retirar 👎😕</h3>
+    <h3>🔴🔴🔴🔴🔴 ➖ Retirar 😕👎</h3>
     <div id="lista-retiradas"></div>
     <button class="btn" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho ✔️</button>
     <button class="btn" style="background:#555; color: #fff;" onclick="document.getElementById('modal').style.display='none'">Fechar ❌</button>
@@ -161,7 +161,7 @@
 
     function finalizar() {
         let nomeCliente = document.getElementById('nome-cliente').value;
-        let msg = `🍔 *PEDIDO BOCA GRANDE*%0A%0A`;
+        let msg = `🍔 *PEDIDO ADEGA LANCHES*%0A%0A`;
         msg += `👤 *Cliente:* ${nomeCliente}%0A`;
         msg += `📋 *Itens:*%0A` + carrinho.map(p => `• ${p.nome} ${p.extras.map(e => '(+'+e.nome+')')} ${p.rems.map(r => '(Sem '+r+')')}`).join('%0A');
         if(document.getElementById('entrega').value !== '0') msg += `%0A%0A🏠 *Endereço:* ${document.getElementById('endereco').value}`;
